@@ -1,0 +1,108 @@
+<div id="feed">
+    <div id="feedColumn">
+        <div id="feedColumn-createTweet">
+            <h3 id="feedColumn-createTweet-heading" class="cardHeader">Tweet something</h3>
+            <hr/>
+            <img 
+                id = "feedColumn-createTweet-profilePic"
+                class = "profilePic"
+                src = "../../assets/nick-profile-pic.jpg"
+            />
+            <textarea id="feedColumn-createTweet-tweetTextInput" placeholder="What's happening?"></textarea>
+            <div id="feedColumn-createTweet-buttonRow">
+                <img id="feedColumn-createTweet-buttonRow-tweetPhotoInput" class="blueSVG" src="../../assets/photo-icon.svg"/>
+                <div id="feedColumn-createTweet-buttonRow-privacyGroup">
+                    <img 
+                        id="feedColumn-createTweet-buttonRow-privacyGroup-globalPrivacyIcon" 
+                        class="blueSVG" 
+                        src="../../assets/globe-icon.svg"
+                    />
+                    <div 
+                        id="feedColumn-createTweet-buttonRow-privacyGroup-privacyText"
+                    >
+                        Everyone can reply.
+                    </div>
+                </div>
+                <button
+                    id="feedColumn-createTweet-buttonRow-tweetButton"
+                >
+                    Tweet
+                </button>
+            </div>
+        </div>
+
+        <div id="feedColumn-refreshFeed">
+            <button
+                id="feedColumn-refreshFeed-button"
+            >
+                <img 
+                    id="feedColumn-refreshFeed-button-icon" 
+                    src="../../assets/refresh-icon.svg"
+                />
+                <div
+                    id="feedColumn-refreshFeed-button-text"
+                >
+                    Refresh
+                </div>
+            </button>
+        </div>
+
+        <div id="feedColumn-feed">
+            <app-feed-item></app-feed-item>
+        </div>
+    </div>
+    <div id="widgetColumn">
+        <div id="widgetColumn-trendsForYou">
+            <h3 id="widgetColumn-trendsForYou-heading" class="cardHeader">Trends for you</h3>
+            <hr/>
+            <a class="trendsForYouSuggestion" href="/search?searchterm=#programming">
+                <div class="trendsForYouTopic">
+                    #programming
+                </div>
+                <div class="trendsForYouNumTweets">
+                    213k Tweets
+                </div>
+            </a>
+            <a class="trendsForYouSuggestion" href="/search?searchterm=#devchallenges">
+                <div class="trendsForYouTopic">
+                    #devchallenges
+                </div>
+                <div class="trendsForYouNumTweets">
+                    123k Tweets
+                </div>
+            </a>
+            <a class="trendsForYouSuggestion" href="/search?searchterm=#frontend">
+                <div class="trendsForYouTopic">
+                    #frontend
+                </div>
+                <div class="trendsForYouNumTweets">
+                    34k Tweets
+                </div>
+            </a>
+            <a class="trendsForYouSuggestion" href="/search?searchterm=#helsinki">
+                <div class="trendsForYouTopic">
+                    #helsinki
+                </div>
+                <div class="trendsForYouNumTweets">
+                    11k Tweets
+                </div>
+            </a>
+            <a class="trendsForYouSuggestion" href="/search?searchterm=#100daysofcode">
+                <div class="trendsForYouTopic">
+                    #100daysofcode
+                </div>
+                <div class="trendsForYouNumTweets">
+                    5k Tweets
+                </div>
+            </a>
+            <a class="trendsForYouSuggestion" href="/search?searchterm=#learntocode">
+                <div class="trendsForYouTopic">
+                    #learntocode
+                </div>
+                <div class="trendsForYouNumTweets">
+                    1k Tweets
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

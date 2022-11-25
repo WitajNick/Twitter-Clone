@@ -1,0 +1,78 @@
+.feedItem {
+    background-color: #FFFFFF;
+    width: calc(100% - 30px);
+    padding: 15px;
+    border-radius: 15px;
+}
+.feedItem-headerRow {
+    display: flex;
+}
+.feedItem-profilePic {
+    width: 45px;
+    height: 45px;
+    border-radius: 20%;
+    margin: 0 20px 0 0;
+}
+.feedItem-tweetMetadata {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.feedItem-tweetMetadata-user {
+    margin: 0 0 2px 0;
+}
+.feedItem-tweetMetadata-date {
+    color: #919191;
+    font-size: 13px;
+}
+.feedItem-tweetText {
+    margin: 10px 0 0 0;
+}
+.feedItem-tweetEngagement {
+    display: flex;
+    justify-content: flex-end;
+    color: #919191;
+    font-size: 13px;
+}
+.feedItem-tweetEngagement-comments, .feedItem-tweetEngagement-retweets {
+    margin: 0 15px 0 0;
+}
+.feedItem-tweetEngagementButtons {
+    border: #d3d3d3;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    margin: 10px 0 0 10px;
+    display: flex;
+}
+.feedItem-tweetEngagementButtons-comment, .feedItem-tweetEngagementButtons-retweet, .feedItem-tweetEngagementButtons-like, .feedItem-tweetEngagementButtons-save {
+    background: none;
+    display: flex;
+    width: 25%;
+    border-style: solid;
+    border-width: 0;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    &:hover {
+        background-color: #e4e4e4;
+    }
+    cursor: pointer;
+    >img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 0 0;
+    }
+    >div {
+        line-height: 30px;
+        height: 30px;
+        font-size: 12pt;
+        font-weight: 540;
+    }
+}
+.feedItem-tweetEngagementButtons-retweet-text {
+    color: rgb(56, 192, 56);
+}
+.feedItem-tweetEngagementButtons-like-text {
+    color: rgb(206, 47, 47);
+}
+.feedItem-tweetEngagementButtons-save-text {
+    color: rgb(48, 73, 212);
+}

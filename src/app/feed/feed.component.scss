@@ -1,0 +1,131 @@
+#feed {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 20px 0 20px 0;
+}
+#feedColumn {
+    width: 800px;
+    margin-right: 20px;
+}
+#feedColumn-createTweet {
+    background-color: white;
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 0 20px 0 0;
+    border-radius: 15px;
+}
+#widgetColumn {
+    width: 300px;
+}
+#widgetColumn-trendsForYou {
+    width: calc(100% - 30px);
+    background-color: white;
+    border-radius: 20px;
+    padding:15px;
+}
+.cardHeader {
+    margin: 0;
+}
+.trendsForYouSuggestion {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    display: block;
+    &:hover {
+        background-color: #e6e6e6;
+    }
+}
+.trendsForYouTopic {
+    color: black;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+.trendsForYouNumTweets {
+    color: #9c9c9c;
+    font-weight: 200;
+    font-size: 8pt;
+}
+.profilePic {
+    border-radius: 20%;
+    height: 70px;
+}
+#feedColumn-createTweet-tweetTextInput {
+    border: none;
+    outline: none;
+    font-family: Helvetica;
+    font-size: 12pt;
+    resize: none;
+    margin-left: 15px;
+    width: calc(100% - 89px);
+    height: 80px;
+    vertical-align: top;
+}
+#feedColumn-createTweet-buttonRow {
+    display: flex;
+    width: 100%;
+}
+#feedColumn-createTweet-buttonRow-tweetPhotoInput {
+    height: 25px;
+    margin: 0 20px 0 90px;
+    cursor: pointer;
+    &:hover {
+        filter: invert(50%) sepia(97%) saturate(1821%) hue-rotate(161deg) brightness(80%) contrast(101%);
+    }
+}
+#feedColumn-createTweet-buttonRow-privacyGroup {
+    display: flex;
+    cursor: pointer;
+    &:hover {
+        filter: invert(50%) sepia(97%) saturate(1821%) hue-rotate(161deg) brightness(80%) contrast(101%);
+    }
+}
+#feedColumn-createTweet-buttonRow-privacyGroup-globalPrivacyIcon {
+    height: 25px;
+    margin: 0 5px 0 0;
+}
+#feedColumn-createTweet-buttonRow-privacyGroup-privacyText {
+    color: #1DA1F2;
+    height: 25px;
+    line-height: 25px;
+}
+#feedColumn-createTweet-buttonRow-tweetButton {
+    margin: 0 20px 0 0;
+    justify-self: flex-end;
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    &:hover {
+        background-color: #1684c9;
+    }
+}
+#feedColumn-refreshFeed-button {
+    display: flex;
+    height: 40px;
+    border-style: solid;
+    border-width: 0;
+    align-items: center;
+    cursor: pointer;
+    &:hover #feedColumn-refreshFeed-button-icon {
+        transform: rotate(180deg);
+    }
+}
+#feedColumn-refreshFeed-button-icon {
+    filter: brightness(0.2);
+    height: 20px;
+    margin: 0 10px 0 0;
+    transition: 0.7s ease;
+}
+#feedColumn-refreshFeed-button-text {
+    color: #474747;
+    height: 40px;
+    line-height: 40px;
+}
+.blueSVG {
+    filter: invert(50%) sepia(97%) saturate(1821%) hue-rotate(161deg) brightness(97%) contrast(101%);
+}

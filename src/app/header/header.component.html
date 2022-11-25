@@ -1,0 +1,43 @@
+<header>
+    <a 
+        id = "header-heading" 
+        href = "/"
+    >
+        <img 
+            id = "header-heading-img"
+            src = "../../assets/twitter-logo.svg"
+        />
+        <h1 id = "header-heading-text">Tweeter</h1>
+    </a>
+
+    <nav id = "header-navMenu">
+        <a class = "headerNavItem active" href = "/">Home</a>
+        <a class = "headerNavItem" href = "/explore">Explore</a>
+        <a class = "headerNavItem" href = "/bookmarks">Bookmarks</a>
+    </nav>
+
+    <button id = "header-profileMenu">
+        <img 
+            id = "header-profileMenu-profilePic"
+            class = "profilePic"
+            src = "../../assets/nick-profile-pic.jpg"
+        />
+        <span 
+            id = "header-profileMenu-username"
+        >
+            Nick Liszewski
+        </span>
+        <img 
+            id = "header-profileMenu-dropdownIcon" 
+            src="../../assets/dropdown-icon.svg"
+        />
+    </button>
+    <div id = "header-profileMenuDropdown">
+        <a class="profileMenuDropdownLink" href="/myprofile">My Profile</a>
+        <a class="profileMenuDropdownLink" href="/groupchat">Group Chat</a>
+        <a class="profileMenuDropdownLink" href="/settings">Settings</a>
+        <hr/>
+        <button id="header-profileMenuDropdown-logoutButton">Log Out</button>
+    </div>
+
+</header>
